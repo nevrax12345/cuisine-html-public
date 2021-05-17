@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tantale cuisine</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="entete.css" type="text/css">
+<script src='menu.js'></script>
+<script src="https://kit.fontawesome.com/b54aea2008.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id='grisage' style='display:none'></div>
+<div id='page'>
+<div id='entete_alignement'>
+<div id="menu" class='haut' onclick='afficheMenu(this)'><i class="fas fa-bars" id='icone_menu'></i></div>
+<div id='logo' class='haut'><a class='logo' href="index.html"> <img class='logo' alt='logo de tantale cuisine' src='logo.png' height=50px> </a></div>
+<div id='barre_de_recherche' class='haut'><input type='text' id='search_input' placeholder='Rechercher une recette'> <i class="fas fa-search" id='loupe'></i><div id='contour_loupe'></div></div>
+<div id='log_in' class='haut'><a id='log_in_lien' href='log_in.html'>se connecter</a></div>
+<div id='sign_up' class='haut'><div id='sign_up_text' class='haut'><a id='sign_up_lien' href='sign_up.html'>s'inscrire</a></div><a id='sign_up_contour' href='sign_up.html' class='haut'></a></div>
+</div>
+<div id='menu_container'style='display:none'>
+<div class="menu" id="menu1">
+<a href="#" class='titre'>Recettes</a>
+</br>
+<ol id="sousmenu1">
+<li class="sousmenu">
+<a href="#">Toutes les recettes</a>
+</li>
+<li class="sousmenu">
+<a href="#">Entrées</a>
+</li>
+<li class="sousmenu">
+<a href="#">Plats</a>
+</li>
+<li class="sousmenu">
+<a href="#">Desserts</a>
+</li>
+<li class="sousmenu">
+<a href="#">Apéritifs</a>
+</li>
+<li class="sousmenu">
+<a href="#">Boissons</a>
+</li>
+</ol>
+</div>
+<div class="menu" id="menu2">
+<a href="#" class='titre'>Idées de recettes</a>
+</br>
+<ol id="sousmenu2">
+<li class="sousmenu">
+<a href="#">Menus de la semaine</a>
+</li>
+<li class="sousmenu">
+<a href="#">Recettes de saison</a>
+</li>
+<li class="sousmenu">
+<a href="#">Recettes par thème</a>
+</li>
+<li class="sousmenu">
+<a href="#">Recettes par ingrédients</a>
+</li>
+<li class="sousmenu">
+<a href="#">Top des recettes</a>
+</li>
+<li class="sousmenu">
+<a href="#">Classiques</a>
+</li>
+<li class="sousmenu">
+<a href="#">Mieux manger</a>
+</li>
+</ol>
+</div>
+<div class="menu" id="menu3">
+<a href="#" class='titre'> Aides de cuisine</a>
+</br>
+<ol id="sousmenu3">
+<li class="sousmenu">
+<a href="#"> Tables de conversion</a>
+</li>
+<li class="sousmenu">
+<a href="#">Techniques</a>
+</li>
+</ol>
+</div>
+</div>
+<div id='contenu'>
+<div id='differentes_recettes'>
+<div class='menu_container'>
+<div class='menu_déroulant' id='entrée'><i class="fas fa-carrot nouriture"></i> Entrées <i class="fas fa-chevron-down"></i></div>
+<div class='dropdown_content'><a href="#">toutes les entrées</a><a href="#">les plus vues</a><a href="#">les mieux notées</a></div></div>
+<div class='menu_container'>
+<div class='menu_déroulant' id='plat'><i class="fas fa-drumstick-bite nouriture"></i> Plats <i class="fas fa-chevron-down"></i></div>
+<div class='dropdown_content'><a href="#">touts les plats</a><a href="#">les plus vus</a><a href="#">les mieux notés</a></div></div>
+<div class='menu_container'>
+<div class='menu_déroulant' id='dessert'><i class="fas fa-candy-cane nouriture"></i> Desserts <i class="fas fa-chevron-down"></i></div>
+<div class='dropdown_content'><a href="#">touts les desserts</a><a href="#">les plus vus</a><a href="#">les mieux notés</a></div></div>
+<div class='menu_container'>
+<div class='menu_déroulant' id='apéritif'><i class="fas fa-glass-martini-alt nouriture"></i> Apéritifs <i class="fas fa-chevron-down"></i></div>
+<div class='dropdown_content'><a href="#">touts les apéritifs</a><a href="#">les plus vus</a><a href="#">les mieux notés</a></div></div>
+</div>
+<hr>
+<h1> quelques recettes</h1>
+<div class='ligne'>
+<div class='tuile 1 left' id='1' href='#'>
+<a href='bouchee-a-la-reine.html'>
+<div class='illustration'>
+<style>
+.illustration{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+	background-repeat:no-repeat;
+	background-image:url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/18508F50-70E1-4F04-B358-44D84D23F45B/Derivates/D7C4DE1B-7A46-4738-898C-2F61E776E82A.jpg);
+}
+
+.illustration:hover{
+	background-image:url(https://i1.wp.com/www.thefrenchcookingacademy.com/wp-content/uploads/2017/07/Bouchee-a-la-reine.jpg?fit=606%2C610&ssl=1);
+}
+</style>
+</div>
+<div class='explication'>
+<i class="fas fa-sort-up"></i>
+<div class='NomRecette'>bouchées à la reine</div>
+</br>
+<div class='caracteristiques'>
+<i class="fas fa-coins caracteristique" id='coins'></i><div id='argent' class='caracteristique'> moyen </div>
+<i class="far fa-clock caracteristique" id='clock'></i><div id='temps' class='caracteristique'> 1h </div>
+<i class="fas fa-hamburger caracteristique" id='burger'></i><div id='difficulté' class='caracteristique'> facile </div>
+</div>
+<div class='description'>
+Cette recette au poulet et au veau est délicieuse.
+</div>
+</div>
+</a>
+</div>
+<div class='tuile 1 center' href='#'>
+<a href='bouchee-a-la-reine.html'>
+<div class='illustration'>
+<style>
+.illustration{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+	background-repeat:no-repeat;
+	background-image:url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/18508F50-70E1-4F04-B358-44D84D23F45B/Derivates/D7C4DE1B-7A46-4738-898C-2F61E776E82A.jpg);
+}
+
+.illustration:hover{
+	background-image:url(https://i1.wp.com/www.thefrenchcookingacademy.com/wp-content/uploads/2017/07/Bouchee-a-la-reine.jpg?fit=606%2C610&ssl=1);
+}
+</style>
+</div>
+<div class='explication'>
+<i class="fas fa-sort-up"></i>
+<div class='NomRecette'>bouchées à la reine</div>
+</br>
+<div class='caracteristiques'>
+<i class="fas fa-coins caracteristique" id='coins'></i><div id='argent' class='caracteristique'> moyen </div>
+<i class="far fa-clock caracteristique" id='clock'></i><div id='temps' class='caracteristique'> 1h </div>
+<i class="fas fa-hamburger caracteristique" id='burger'></i><div id='difficulté' class='caracteristique'> facile </div>
+</div>
+<div class='description'>
+Cette recette au poulet et au veau est délicieuse.
+</div>
+</div>
+</a>
+</div>
+<div class='tuile 1 right' href='#'>
+<a href='bouchee-a-la-reine.html'>
+<div class='illustration'>
+<style>
+.illustration{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+	background-repeat:no-repeat;
+	background-image:url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/18508F50-70E1-4F04-B358-44D84D23F45B/Derivates/D7C4DE1B-7A46-4738-898C-2F61E776E82A.jpg);
+}
+
+.illustration:hover{
+	background-image:url(https://i1.wp.com/www.thefrenchcookingacademy.com/wp-content/uploads/2017/07/Bouchee-a-la-reine.jpg?fit=606%2C610&ssl=1);
+}
+</style>
+</div>
+<div class='explication'>
+<i class="fas fa-sort-up"></i>
+<div class='NomRecette'>bouchées à la reine</div>
+</br>
+<div class='caracteristiques'>
+<i class="fas fa-coins caracteristique" id='coins'></i><div id='argent' class='caracteristique'> moyen </div>
+<i class="far fa-clock caracteristique" id='clock'></i><div id='temps' class='caracteristique'> 1h </div>
+<i class="fas fa-hamburger caracteristique" id='burger'></i><div id='difficulté' class='caracteristique'> facile </div>
+</div>
+<div class='description'>
+Cette recette au poulet et au veau est délicieuse.
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class='ligne'>
+<div class='tuile 1 left' href='#'>
+<a href='bouchee-a-la-reine.html'>
+<div class='illustration'>
+<style>
+.illustration{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+	background-repeat:no-repeat;
+	background-image:url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/18508F50-70E1-4F04-B358-44D84D23F45B/Derivates/D7C4DE1B-7A46-4738-898C-2F61E776E82A.jpg);
+}
+
+.illustration:hover{
+	background-image:url(https://i1.wp.com/www.thefrenchcookingacademy.com/wp-content/uploads/2017/07/Bouchee-a-la-reine.jpg?fit=606%2C610&ssl=1);
+}
+</style>
+</div>
+<div class='explication'>
+<i class="fas fa-sort-up"></i>
+<div class='NomRecette'>bouchées à la reine</div>
+</br>
+<div class='caracteristiques'>
+<i class="fas fa-coins caracteristique" id='coins'></i><div id='argent' class='caracteristique'> moyen </div>
+<i class="far fa-clock caracteristique" id='clock'></i><div id='temps' class='caracteristique'> 1h </div>
+<i class="fas fa-hamburger caracteristique" id='burger'></i><div id='difficulté' class='caracteristique'> facile </div>
+</div>
+<div class='description'>
+Cette recette au poulet et au veau est délicieuse.
+</div>
+</div>
+</a>
+</div>
+<div class='tuile 1 center' href='#'>
+<a href='bouchee-a-la-reine.html'>
+<div class='illustration'>
+<style>
+.illustration{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+	background-repeat:no-repeat;
+	background-image:url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/18508F50-70E1-4F04-B358-44D84D23F45B/Derivates/D7C4DE1B-7A46-4738-898C-2F61E776E82A.jpg);
+}
+
+.illustration:hover{
+	background-image:url(https://i1.wp.com/www.thefrenchcookingacademy.com/wp-content/uploads/2017/07/Bouchee-a-la-reine.jpg?fit=606%2C610&ssl=1);
+}
+</style>
+</div>
+<div class='explication'>
+<i class="fas fa-sort-up"></i>
+<div class='NomRecette'>bouchées à la reine</div>
+</br>
+<div class='caracteristiques'>
+<i class="fas fa-coins caracteristique" id='coins'></i><div id='argent' class='caracteristique'> moyen </div>
+<i class="far fa-clock caracteristique" id='clock'></i><div id='temps' class='caracteristique'> 1h </div>
+<i class="fas fa-hamburger caracteristique" id='burger'></i><div id='difficulté' class='caracteristique'> facile </div>
+</div>
+<div class='description'>
+Cette recette au poulet et au veau est délicieuse.
+</div>
+</div>
+</a>
+</div>
+<div class='tuile 1 right' href='#'>
+<a href='bouchee-a-la-reine.html'>
+<div class='illustration'>
+<style>
+.illustration{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+	background-repeat:no-repeat;
+	background-image:url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/18508F50-70E1-4F04-B358-44D84D23F45B/Derivates/D7C4DE1B-7A46-4738-898C-2F61E776E82A.jpg);
+}
+
+.illustration:hover{
+	background-image:url(https://i1.wp.com/www.thefrenchcookingacademy.com/wp-content/uploads/2017/07/Bouchee-a-la-reine.jpg?fit=606%2C610&ssl=1);
+}
+</style>
+</div>
+<div class='explication'>
+<i class="fas fa-sort-up"></i>
+<div class='NomRecette'>bouchées à la reine</div>
+</br>
+<div class='caracteristiques'>
+<i class="fas fa-coins caracteristique" id='coins'></i><div id='argent' class='caracteristique'> moyen </div>
+<i class="far fa-clock caracteristique" id='clock'></i><div id='temps' class='caracteristique'> 1h </div>
+<i class="fas fa-hamburger caracteristique" id='burger'></i><div id='difficulté' class='caracteristique'> facile </div>
+</div>
+<div class='description'>
+Cette recette au poulet et au veau est délicieuse.
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

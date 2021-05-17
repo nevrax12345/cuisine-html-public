@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bouchée à la reine</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="feuille-de-style.css" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://kit.fontawesome.com/b54aea2008.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="image.css" type="text/css">
+<link rel="stylesheet" href="entete.css" type="text/css">
+<script src='menu.js'></script>
+</head>
+<body>
+<div id='grisage' style='display:none'></div>
+<div id='page'>
+<div id='entete_alignement'>
+<div id="menu" class='haut' onclick='afficheMenu(this)'><i class="fas fa-bars" id='icone_menu'></i></div>
+<div id='logo' class='haut'><a class='logo' href="index.html"> <img class='logo' alt='logo de tantale cuisine' src='logo.png' height=50px> </a></div>
+<div id='barre_de_recherche' class='haut'><input type='text' id='search_input' placeholder='Rechercher une recette'> <i class="fas fa-search" id='loupe'></i><div id='contour_loupe'></div></div>
+<div id='log_in' class='haut'><a id='log_in_lien' href='log_in.html'>se connecter</a></div>
+<div id='sign_up' class='haut'><div id='sign_up_text' class='haut'><a id='sign_up_lien' href='sign_up.html'>s'inscrire</a></div><a id='sign_up_contour' href='sign_up.html' class='haut'></a></div>
+</div>
+<div id='menu_container'style='display:none'>
+<div class="menu" id="menu1">
+<a href="#" class='titre'>Recettes</a>
+</br>
+<ol id="sousmenu1">
+<li class="sousmenu">
+<a href="#">Toutes les recettes</a>
+</li>
+<li class="sousmenu">
+<a href="#">Entrées</a>
+</li>
+<li class="sousmenu">
+<a href="#">Plats</a>
+</li>
+<li class="sousmenu">
+<a href="#">Desserts</a>
+</li>
+<li class="sousmenu">
+<a href="#">Apéritifs</a>
+</li>
+<li class="sousmenu">
+<a href="#">Boissons</a>
+</li>
+</ol>
+</div>
+<div class="menu" id="menu2">
+<a href="#" class='titre'>Idées de recettes</a>
+</br>
+<ol id="sousmenu2">
+<li class="sousmenu">
+<a href="#">Menus de la semaine</a>
+</li>
+<li class="sousmenu">
+<a href="#">Recettes de saison</a>
+</li>
+<li class="sousmenu">
+<a href="#">Recettes par thème</a>
+</li>
+<li class="sousmenu">
+<a href="#">Recettes par ingrédients</a>
+</li>
+<li class="sousmenu">
+<a href="#">Top des recettes</a>
+</li>
+<li class="sousmenu">
+<a href="#">Classiques</a>
+</li>
+<li class="sousmenu">
+<a href="#">Mieux manger</a>
+</li>
+</ol>
+</div>
+<div class="menu" id="menu3">
+<a href="#" class='titre'> Aides de cuisine</a>
+</br>
+<ol id="sousmenu3">
+<li class="sousmenu">
+<a href="#"> Tables de conversion</a>
+</li>
+<li class="sousmenu">
+<a href="#">Techniques</a>
+</li>
+</ol>
+</div>
+</div>
+<div id="contenu">
+<h1> bouchée à la reine</h1>
+<div id="image">
+<div id="galleryView">
+<div id="galleryContainer">
+<div id="leftView"></div>
+<button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+<a id="linkTag">
+<div id="mainView"></div>
+</a>
+<div id="rightView"></div>
+<button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+</div></div>
+<div id="tilesView">
+<div id="tilesContainer"></div>
+</div></div>
+<script src="image.js"></script>
+<div id='caracteristiques'>
+<i class="fas fa-coins" id='coins'></i><div id='argent' class='caracteristique'> moyen </div>
+<i class="far fa-clock" id='clock'></i><div id='temps' class='caracteristique'> 1h </div>
+<i class="fas fa-hamburger" id='burger'></i><div id='difficulté' class='caracteristique'> facile </div>
+</div>
+<br/></br>
+<h2>Ingrédient :</h2>
+<div id='ingredients'>
+<ol class='liste-ingredients' id='liste-ingredients1'dir='rtl'>
+<li class='container'> <input type="checkbox"><span class="checkmark"></span> 300g de rumsteak de veau  </li> </br>
+<li  class='container'><input type="checkbox"><span class="checkmark"></span> 2escalopes de veau</li></br>
+<li  class='container'><input type="checkbox"><span class="checkmark"></span> 200g de champignons</li></br>
+<li  class='container'><input type="checkbox"><span class="checkmark"></span> une boite de quenelle de veau</li></br>
+<li  class='container'><input type="checkbox"><span class="checkmark"></span> 45g de beurre</li></br>
+<li  class='container'><input type="checkbox"><span class="checkmark"></span>  3cuillère à soupe de farine</li></br>
+</ol>
+<ol class='liste-ingredients' id='liste-ingredients2'>
+<li><input type="checkbox"><span class="checkmark"></span>  75cl de bouillon de volaille</li></br>
+<li><input type="checkbox"><span class="checkmark"></span> 3 oeufs</li></br>
+<li><input type="checkbox"><span class="checkmark"></span>  10cl de crème fraiche</li></br>
+<li><input type="checkbox"><span class="checkmark"></span> 1 verre de vin blanc</li></br>
+<li><input type="checkbox"><span class="checkmark"></span> 6 croute de pate feuilleté</li></br>
+</ol>
+</div><br/><br/>
+<hr/>
+<br/>
+<h2>Préparation :</h2>
+<div id='recette'>
+<p>
+<li><b>étape 1:</b></br>Coupez les champignons en lamelles et les quenelles égouttées en petits tronçons.</li><br/>
+<li><b>étape 2:</b></br>Coupez la viande en petits dés et cuisez la rapidement (rose). Réservez.</li><br/>
+<li><b>étape 3:</b></br>Faites fondre le beurre dans un faitout, ajoutez la farine et faites cuire en remuant pendant 3 mn</li><br/>
+<li><b>étape 4:</b></br>Mouillez ensuite ce roux blond avec le bouillon de volaille et portez à ébullition.</li><br/>
+<li><b>étape 5:</b></br>Ajoutez la viande, les champignons, le vin blanc, poivre et noix de muscade. Continuez de faire chauffer en remuant sans arrêt.</li><br/>
+<li><b>étape 6:</b></br>Incorporez les quenelles et remuez délicatement</li><br/>
+<li><b>étape 7:</b></br>Délayez à part les jaunes d'oeufs avec la crème fraîche dans un bol, puis versez cette liaison dans le faitout en remuant. Faites chauffer sans bouillir pendant 5 mn</li><br/>
+<li><b>étape 8:</b></br>Faites chauffer les croûtes précuites dans le four à 180°C. Lorsqu'elles sont bien chaudes et très sèches, les sortir et enlever les chapeaux</li><br/>
+<li><b>étape 9:</b></br>Disposez les croûtes sur assiettes individuelles (accompagnées de riz ou pâtes). Les remplir de la garniture en sauce et posez les chapeaux dessus. Servez Aussitôt. </li><br/>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

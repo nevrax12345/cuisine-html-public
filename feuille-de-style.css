@@ -1,0 +1,120 @@
+#page{
+	width:100%;
+	height:100%;
+}
+
+#contenu{
+	position:relative;
+	margin:65px auto;
+	font-family:Comic-sans-MS,arial; 
+	width:80%;
+	left:0px;
+	padding:0;
+	z-index:0;
+}
+
+h1{
+	position:relative;
+	top:20px;
+	text-align:center; 
+	color:#882196;
+	display:box;
+}
+
+h2{ 
+	text-align:left; 
+	color:#882196;
+	text-decoration:underline;
+
+}
+
+ol{
+	font-family:Comic-sans-MS,arial; 
+	Font-size:125% 
+}
+
+IMG.image{
+	display:block; 
+	margin-left:auto; 
+	margin-right:auto 
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.royale{
+	text-align:center
+}
+h3{
+
+	font-family:Castellar;  
+	color:#882196;
+	text-decoration:underline;
+	Font-size:145%
+}
+.logo{
+	display:flex;
+	
+}
+.chemin{
+	display:flex;
+	flex-grow:9;
+	font-size:100%
+}
+table{
+	font-family:Comic-sans-MS,arial; 
+}
+
+#ingredients{
+	column-count: 2;
+	column-gap: 0px;
+	column-rule: 5px dotted #882196;
+}
+
+.liste-ingredients{
+	list-style-type: none;
+	margin:0;
+}
+
+#liste-ingredients1{
+	text-align:right;
+}
+
+#liste-ingredients2{
+	text-align:left;
+}
+
+
+#caracteristiques{
+	column-count:3;
+	text-align:center;
+	column-rule: 1px solid #882196;
+	border: 1px solid #882196;
+	border-radius:15px;
+}
+#burger, #clock, #coins{
+	color:#882196;
+}
+#recette{
+	list-style-type: none;
+	Font-size:125% 
+}
+
+hr{
+	border: 1px solid #882196;
+	width: 60%
+}
+
+#page{
+	position:absolute;
+	width:100%;
+	top:0px;
+	left:0px;
+	
+}
+
+
+
